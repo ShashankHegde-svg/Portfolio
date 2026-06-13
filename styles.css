@@ -86,7 +86,9 @@ body {
   height: 92vh;
   background-color: var(--bg-color);
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(0, 0, 0, 0.8);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    inset 0 0 30px rgba(0, 0, 0, 0.8);
   position: relative;
   overflow: hidden;
   backface-visibility: hidden;
@@ -96,7 +98,9 @@ body {
     var(--terminal-bg) 0%,
     var(--bg-color) 90%
   );
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Static scanlines instead of animated */
@@ -639,7 +643,9 @@ body {
   background-color: var(--terminal-highlight);
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .language-option:hover {
@@ -664,7 +670,9 @@ body {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--border-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -789,7 +797,9 @@ body {
   border-right: 2px solid var(--text-color);
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -954,7 +964,9 @@ body {
   font-family: "Fira Code", monospace;
   font-weight: 500;
   margin-top: 15px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .download-button:hover {
@@ -1046,4 +1058,19 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Fira Code", monospace;
+}
+.project-item {
+  margin-bottom: 30px;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.project-divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 2px dashed rgba(255, 255, 255, 0.2);
 }
